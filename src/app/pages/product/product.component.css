@@ -1,0 +1,26 @@
+.newPro {
+  color: var(--primary-light);
+  border: 1px solid var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 16px;
+  height: 50px;
+}
+i {
+  font-size: 1.5rem;
+}
+.hmDiv {
+  padding-bottom: 15%;
+  position: relative;
+}
+.backArrow {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  color: var(--primary-light);
+}
+#back {
+  font-size: 35px;
+}

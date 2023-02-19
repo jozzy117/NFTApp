@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* font-size: calc(16px + 1vw); */
+  font-size: 62.5%;
+  /* Color styles */
+  --primary-light: #FFFFFF;
+  --primary-bg: #000000;
+  --primary-blue: #7B66FF;
+  --secondary-green: #B9E39A;
+  --black: #000000;
+  --secondary-text: #B3B3B3;
+  --button-text: #2E2C37;
+  
+  
+  /* Text-size styles */
+  --heading1: 3.2rem;
+  --heading2: 2.8rem;
+  --heading3: 2.2rem;
+  --paragraph1: 2rem;
+  --paragraph2: 1.5rem;
+  
+}
+
+body, p {
+  margin: 0;
+}
+
+.heading-1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--heading1);
+  letter-spacing: 0.75px;
+  color: var(--primary-light);
+}
+
+.heading-2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--heading2);
+  letter-spacing: 0.75px;
+  color: var(--primary-light);
+}
+
+.heading-3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--heading3);
+  letter-spacing: 0.75px;
+  color: var(--primary-light);
+}
+
+.paragraph-1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--paragraph1);
+  letter-spacing: 0.75px;
+  color: var(--secondary-text);
+}
+.paragraph-1-light {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--paragraph1);
+  letter-spacing: 0.75px;
+  color: var(--primary-light);
+}
+
+.paragraph-2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--paragraph2);
+  letter-spacing: 0.75px;
+  color: var(--secondary-text);
+}
+
+.main-container {
+  background-color: var(--primary-bg);
+  width: 100vw;
+  border-radius: 20px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}

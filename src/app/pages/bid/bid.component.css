@@ -1,0 +1,50 @@
+.hmDiv {
+  padding: 15% 0%;
+}
+.fxPad {
+  padding: 0% 10%;
+}
+.backArrow {
+  /* position: absolute;
+  top: 80px;
+  left: 30px; */
+  color: var(--primary-light);
+}
+#back {
+  font-size: 35px;
+}
+.gain {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  margin-bottom: 5px;
+  color: var(--secondary-green);
+}
+
+.slick-slider {
+  width: 100%;
+  margin: auto;
+}
+
+.slide-width {
+  /* width: 8.8% !important; */
+  /* margin-right: 16px !important; */
+}
+
+body .slick-prev, 
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: grey !important;
+  z-index: 100;
+}
+
+::ng-deep.slick-prev:before, ::ng-deep.slick-next:before {
+  display: none;
+}
+#chart {
+  max-width: 600px;
+  margin: 30px auto;
+}

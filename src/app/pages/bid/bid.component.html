@@ -1,0 +1,37 @@
+<div class="hmDiv">
+  <div class="fxPad d-flex align-items-center mb-5" style="gap: 20%;">
+    <span class="backArrow" routerLink="/home"><i id="back" class="fa-solid fa-arrow-left"></i></span>
+    <span class="d-flex align-items-center" style="gap: 10px;">
+      <i style="color: white; font-size: 25px;" [class]="element.className"></i>
+      <p class="heading-2"> {{element.name}}</p>
+    </span>
+  </div>
+  <div class="fxPad d-flex align-items-end mb-5" style="gap: 10px;">
+    <p class="heading-1">${{element.amount}}</p>
+    <p class="gain">+11.62 (0.74%)</p>
+  </div>
+  <div class="d-flex mb-5">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="productConfig">
+      <div ngxSlickItem *ngFor="let time of productTime" class="slide">
+        <app-button-ui [name]="time.value" [onlyTime]="true" [hasIcon]="false"></app-button-ui>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [yaxis]="chartOptions.yaxis"
+      [grid]="chartOptions.grid"
+    ></apx-chart>
+  </div>
+  <div class="d-flex mx-1" style="gap: 1px;">
+    <div style="width: 50%;" >
+      <app-button-ui style="width: 100%;" classNames="fa-solid fa-arrow-up" [isRound]="false" [rightAlign]="true" name="sell" otherClass="blue"></app-button-ui>
+    </div>
+    <div style="width: 50%" >
+      <app-button-ui style="width: 100%;" classNames="fa-solid fa-arrow-down" [isRound]="false" [rightAlign]="true" name="buy" otherClass="green"></app-button-ui>
+    </div>
+  </div>
+</div>
