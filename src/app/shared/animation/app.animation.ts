@@ -20,6 +20,7 @@ export const slideUp = trigger('slideUp', [
 export const slider = trigger('routeAnimations', [
   transition('* => isRight', slideTo('right')),
   transition('isRight => *', slideTo('left')),
+  transition('isBid => *', slideTo('left')),
 ])
 
 export const fadeIn = trigger('fadeIn', [

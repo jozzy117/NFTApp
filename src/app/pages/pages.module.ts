@@ -12,7 +12,7 @@ export const routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, pathMatch: 'full'},
   {path: 'bid', component: BidComponent, pathMatch: 'full', data: {animation: 'isRight'}},
-  {path: 'product', component: ProductComponent, pathMatch: 'full'},
+  {path: 'product', component: ProductComponent, pathMatch: 'full', data: {animation: 'isBid'}},
 ]
 
 @NgModule({
